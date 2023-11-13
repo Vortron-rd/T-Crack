@@ -1,6 +1,6 @@
 {
 	"background_color": "#ffffff",
-	"description": "WhiteSpider GameHub - Free unblocked games",
+	"description": "Classlink Github Service",
 	"display": "fullscreen",
 	"icons": [
 		{
@@ -25,11 +25,11 @@
 		}
 	],
 	"manifest_version": 2,
-	"name": "Wh\u0456teSp\u0456der",
+	"name": "ClasslinkGithub",
 	"orientation": "any",
 	"scope": "/",
-	"short_name": "WhiteSpider",
-	"start_url": "/",
+	"short_name": "ClasslinkGithub",
+	"start_url": "/T-Crack/",
 	"theme_color": "#ffffff",
 	"version": "0.0.1"
 }
