@@ -1,4 +1,18 @@
 # T-Crack
-A unblocker for school chromebooks, fork of whitespider
-Is in aplha stage right now 
-i am currently wokring on a better readme file but this isnt that important compared to making the project actually work
+
+A Games site designed to help Students (Or others) to get on games or anything they want, with gogaurdian out of the loop
+
+
+##links
+For now, we have the one but we may get more in the future
+https://vortron-rd.github.io/T-Crack/
+
+##Data
+asd
+
+##Html
+sdf
+
+##Bookmarklet
+
+##Contacts
