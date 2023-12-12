@@ -48,6 +48,6 @@ body, embed, iframe {
 </html>`);doc.close();doc.title="Google";doc.querySelector("link[rel*='icon']").href="/res/google.ico";doc.body.appendChild(elem);}
 function updateGameList(list){gamesContainer.innerHTML="";for(const game of list){const name=game.name;const elem=document.createElement("div");elem.style.backgroundImage=`url("/games/previews/${encodeURIComponent(name)}.jpg")`;elem.onclick=()=>inNewWindow(createGameFrame(game));elem.oncontextmenu=(e)=>{e.preventDefault();e.stopPropagation();};const elem2=document.createElement("div");elem2.textContent=name;elem.appendChild(elem2);const label=document.createElement("label");elem.appendChild(label);switch(game.type){case "html5":label.textContent="HTML5";label.style.background="#ff9933";break;case "flash":label.textContent="Flash";label.style.background="#00cc99";break;case "dos":label.textContent="Dos";label.style.background="#80bfff";break;}
 gamesContainer.appendChild(elem);}}
-const gameList=await(async()=>{const res=await fetch("/games/list.txt");if(!res.ok){error("Error: Failed to load game list.");return[];}
+const gameList=await(async()=>{const res=await fetch("/T-Crack/games/list.txt");if(!res.ok){error("Error: Failed to load game list.");return[];}
 const list=[];const lines=await res.text();for(const line of lines.split("\n").filter(l=>l.length>0&&l.charAt(0)!=="#").sort()){const[name,type,url]=line.split(";",3);list.push({name,type,url});}
 return list;})();document.title="ClasslinkAPI";updateGameList(gameList);})();
