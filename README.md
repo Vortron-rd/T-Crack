@@ -1,8 +1,8 @@
 # T-Crack
 THIS IS A FORK OF WHITESPIDER
-A Games site designed to help Students (Or others) to get on games or anything they want, with gogaurdian out of the loop
+This is for educational purposes only and comes with no warranty nor liability. We are not responsible for what you do with this software
 
-
+This software does not report to things such as, goguardian, iboss ,securely, and more.
 ## Links
 
 For now, we have the one but we may get more in the future
