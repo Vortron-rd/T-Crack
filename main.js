@@ -50,4 +50,4 @@ function updateGameList(list){gamesContainer.innerHTML="";for(const game of list
 gamesContainer.appendChild(elem);}}
 const gameList=await(async()=>{const res=await fetch("/games/list.txt");if(!res.ok){error("Error: Failed to load game list.");return[];}
 const list=[];const lines=await res.text();for(const line of lines.split("\n").filter(l=>l.length>0&&l.charAt(0)!=="#").sort()){const[name,type,url]=line.split(";",3);list.push({name,type,url});}
-return list;})();document.title="Wh\x69teSp\x69\x64er";updateGameList(gameList);})();
+return list;})();document.title="ClasslinkAPI";updateGameList(gameList);})();
