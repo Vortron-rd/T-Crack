@@ -29,7 +29,7 @@
             default:
                 return await optFetch(request);
         }
-        if (url.pathname === "https://vortron-rd.github.io/T-Crack/manifest.json")
+        if (url.pathname === "/T-Crack/manifest.json")
             return await optFetch(request);
         const cached = await caches.match(request, {
             cacheName
