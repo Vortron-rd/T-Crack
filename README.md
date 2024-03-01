@@ -15,7 +15,7 @@ Not made yet, working on it
 ## Html File(s)
 https://raw.githubusercontent.com/Vortron-rd/T-Crack/main/Downloads/T-Crack.html
 
-Just a basic <Embed> for now, but it may still work.
+Just a basic <Embed> for now, but it may still work. Make sure to Right-click and hit "Save as"
 
 ## Bookmarklet
 Idk if this will ever get made
