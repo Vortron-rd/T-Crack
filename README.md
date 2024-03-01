@@ -20,6 +20,6 @@ Just a basic <Embed> for now, but it may still work.
 ## Bookmarklet
 Idk if this will ever get made
 ## Contacts
-Sorting out issues with discord's "No perma invite link without community channel"
-Thinking about an IRC
+Discord: https://discord.gg/kAQHegv5nc
+
 
