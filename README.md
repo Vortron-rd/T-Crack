@@ -6,8 +6,8 @@ This is for educational purposes only and comes with no warranty nor liability. 
 This software does not report to things such as, goguardian, iboss ,securely, and more.
 ## Links
 
-For now, we have the one but we may get more in the future
 https://vortron-rd.github.io/T-Crack/
+https://tcrack.root.sx/
 
 ## Data URL
 Not made yet, working on it
