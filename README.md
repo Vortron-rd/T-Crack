@@ -13,7 +13,9 @@ https://vortron-rd.github.io/T-Crack/
 Not made yet, working on it
 
 ## Html File(s)
-Not made yet< Wokring on it.
+https://raw.githubusercontent.com/Vortron-rd/T-Crack/main/Downloads/T-Crack.html
+
+Just a basic <Embed> for now, but it may still work.
 
 ## Bookmarklet
 Idk if this will ever get made
