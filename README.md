@@ -3,9 +3,7 @@
 
 This is for educational purposes only and comes with no warranty nor liability. We are not responsible for what you do with this software
 
-This software does not report to things such as, goguardian, iboss ,securely, and more.
-What this means is that your screen will show the last thing you were looking at before you opened it.
-It also lets you browse websites without goguardian or others blocking it.
+
 
 
 
