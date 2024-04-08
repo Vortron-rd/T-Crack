@@ -161,7 +161,7 @@
         frame.setAttribute("loading", "lazy");
         frame.setAttribute("allow", "cross-origin-isolated");
         frame.setAttribute("allowfullscreen", "true");
-        frame.setAttribute("src", url);
+        frame.setAttribute("src", "T-Crack/" + url);
         return frame;
     }
 
