@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #02020d;
+}
+
+h1 {
+  text-align: center;
+  color: #913c03;
+  font-size: 500%;
+}
+p {
+  text-align: justify;
+  color: #fff;
+}
+li {
+  text-align: justify;
+  color: #fff;
+}
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#hub-menu {
+  text-align: center;
+}
+
+#hub-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#hub-menu ul li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#hub-menu ul li:hover {
+  text-decoration: underline;
+}
+
+#fullscreen-btn {
+  display: block;
+  margin: 20px auto;
+}
