@@ -10,10 +10,14 @@ button {
   background-color: #2036FB;
   color: #fff;
 }
-h1 {
+#title h1 {
   text-align: center;
   color: #913c03;
   font-size: 500%;
+}
+#title p {
+  color: #FFE81F;
+  text-align: center;
 }
 p {
   color: #fff;
@@ -35,12 +39,15 @@ li {
 #hub-menu ul {
   list-style: none;
   padding: 0;
+  border: 2px solid #CB6D2E;
+  background-color: #70350D;
 }
 
 #hub-menu ul li {
   display: inline-block;
   cursor: pointer;
   margin: 0 10px;
+  
 }
 
 #hub-menu ul li:hover {
