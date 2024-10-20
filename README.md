@@ -1,3 +1,22 @@
+
+# THIS REPO EXISTS FOR HISTORICAL PURPOSES ONLY. PLEASE USE https://github.com/Vortron-rd/T-Crack/tree/main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # T-Crack
 
 
