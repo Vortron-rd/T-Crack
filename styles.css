@@ -11,7 +11,6 @@ h1 {
   font-size: 500%;
 }
 p {
-  text-align: justify;
   color: #fff;
 }
 li {
@@ -24,7 +23,6 @@ li {
   align-items: center;
   height: 100vh;
 }
-
 #hub-menu {
   text-align: center;
 }
@@ -41,6 +39,25 @@ li {
 }
 
 #hub-menu ul li:hover {
+  text-decoration: underline;
+}
+
+#game-menu {
+  text-align: center;
+}
+
+#game-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#game-menu ul li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#game-menu ul li:hover {
   text-decoration: underline;
 }
 
