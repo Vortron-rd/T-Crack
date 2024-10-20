@@ -7,7 +7,8 @@ body {
   background-color: #02020d;
 }
 button {
-  color: #2036FB;
+  background-color: #2036FB;
+  color: #fff;
 }
 h1 {
   text-align: center;
