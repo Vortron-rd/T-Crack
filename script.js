@@ -7,7 +7,9 @@ function loadGame(gameUrl) {
   const gameContainer = document.getElementById('game-container');
   gameContainer.innerHTML = `<embed src="${gameUrl}" width="100%" height="100%" frameborder="0"></embed>`;
 }
-
+function loadCustomGame() {
+  loadGame(document.getElementById('url-input').value)
+}
 // Function to toggle fullscreen mode
 function toggleFullscreen() {
   const gameContainer = document.getElementById('game-container');
