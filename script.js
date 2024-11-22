@@ -58,7 +58,6 @@ function loadGame(gameUrl) {
 function init() {
 str = window.location.href;
 mainpage = (str.substring(0, str.lastIndexOf("/"))) + '/main.html';
-console.log("Redirecting to: ");
 aboutBlank(mainpage, "embed");
 replace('https://ixl.com');
 }
