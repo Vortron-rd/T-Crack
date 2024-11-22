@@ -77,3 +77,14 @@ li {
   display: block;
   margin: 20px auto;
 }
+.center {
+  position: absolute;
+  left: 47.2%; /* x */
+  top:  45%; /* y */
+}
+
+.large {
+  width 200%
+  height 200%
+  font-size 200%;
+}
