@@ -50,9 +50,10 @@ function replace(url) {
 
 
 // Function to load a game into the game container
-function loadGame(gameUrl) {
+function loadGame(gameurl) {
   const gameContainer = document.getElementById('game-container');
-  gameContainer.innerHTML = `<embed src="${gameUrl}" width="100%" height="100%" frameborder="0"></embed>`;
+  gameContainer.innerHTML = `<embed src="${gameurl}" width="100%" height="100%" frameborder="0"></embed>`;
+  document.getElementById('url-input').value = gameurl;
 }
 //Function ran when index.html is loaded, loads about:blank main.html and replaces parent with ixl.com
 function init() {
@@ -62,9 +63,6 @@ aboutBlank(mainpage, "embed");
 replace('https://ixl.com');
 }
 
-function loadCustomGame() {
-  loadGame(document.getElementById('url-input').value);
-}
 // Function to toggle fullscreen mode
 function toggleFullscreen() {
   const gameContainer = document.getElementById('game-container');
