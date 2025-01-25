@@ -12,7 +12,7 @@ For the most part, T-Crack is centered around bypassing Goguardian, a tool that 
 * [ ] Offer multiple methods of bypassing security systems so the user can simply select which one they need to use
 * [ ] Make a javascript-void version
 * [ ] Add more Domain names for people to use
-* [ ] Panic button incase teacher walks by
+* [ ] Panic button to switch tabs easily
 
 
 
