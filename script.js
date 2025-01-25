@@ -1,3 +1,7 @@
+// Var Definitions
+
+pnckey = "q" //Key used for quickly replacing the tab with a school-safe oneq
+
 //Opens a about:blank tab with either a <iframe> or a <embed>
 function aboutBlank(url, type) {
   var urlObj = new window.URL(window.location.href);
@@ -17,18 +21,18 @@ function aboutBlank(url, type) {
       iframe.src = url;
       win.document.body.appendChild(iframe);
       win.document.title = "IXL | Math, Language Arts, Science, Social Studies, and Spanish"
-      var link = document.querySelector("link[rel~='icon']");
+      var link = win.document.querySelector("link[rel~='icon']");
       if(!link) {
-        link = document.createElement('link');
+        link = win.document.createElement('link');
         link.rel = 'icon';
-        document.head.appendChild(link);
+        win.document.head.appendChild(link);
       }
-      link.href = 'https://stackoverflow.com/favicon.ico';
+      link.href = 'https://www.ixl.com/ixl-favicon.png';
     }
   };
 }
 
-//Replaces the current tab with the specified url and (usually) overwrites history https://
+
 
 document.head = document.head || document.getElementsByTagName('head')[0];
 
@@ -43,7 +47,7 @@ function changeFavicon(src) {
  }
  document.head.appendChild(link);
 }
-
+//Replaces the current tab with the specified url and (usually) overwrites history 
 function replace(url) {
 	window.location.replace(url);
 }
@@ -77,4 +81,12 @@ function toggleFullscreen() {
     } else if (gameContainer.msRequestFullscreen) {
       gameContainer.msRequestFullscreen();
     } 
+}
+document.onkeydown=(e)=>{
+	console.log('Keydown');
+	switch(e.key) {
+		case pnckey:e.preventDefault();
+		e.stopPropagation();
+		replace('https://ixl.com');
+	}
 }
