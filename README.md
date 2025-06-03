@@ -1,5 +1,7 @@
 A website for bypassing system monitoring and restricting tools such as Goguardian.
 
+If you have an issue, don't hesitate to submit a pull request, as I will not be focusing on this project too often and do not usually have time to write up new code.
+
 For the most part, T-Crack is centered around bypassing Goguardian, a tool that schools use to monitor and block websites students use.
 
 - Website(s) [The recommended way to access T-Crack.]
