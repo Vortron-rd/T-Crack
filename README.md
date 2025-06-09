@@ -8,7 +8,10 @@ For the most part, T-Crack is centered around bypassing Goguardian, a tool that 
   https://tcrack.vortron.net
   https://vortron-rd.github.io/T-Crack
 
-* [ ] Make a static HTML file version
+- Portable File version [Not recommended if planning on hosting your own site]
+- https://github.com/Vortron-rd/T-Crack/tree/portable
+
+* [X] Make a static HTML file version
 * [ ] Find a way to Fullscreen in cloaked mode
 * [x] Add a text-chat room
 * [ ] Offer multiple choices of proxy services
