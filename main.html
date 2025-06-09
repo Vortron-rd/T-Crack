@@ -7,7 +7,7 @@
   <button style="float: left; background-color: red;"><a style="color: white;" href="https://github.com/Vortron-rd/T-Crack">Source</a></button>
   <button onclick="aboutBlank(window.location.href, 'embed')"style="float: right;">Open in new tab</button>
 </head>
-<body>
+<body onload="init();">
   <div id=title>
   <img src="logo.png" width=50% style="display: block; margin-left: 20%; margin-right: auto;">
   <p><em>"Games, Now."</em></p>
@@ -27,7 +27,6 @@
       <li onclick="loadGame('https://deadsimplechat.com/zLQ7R4Sjf')">Chatroom</li>
     </ul>
     <div id="custom-url">
->
     </div>
   </div>
   <div id="game-menu">
@@ -215,9 +214,11 @@
   //Function ran when index.html is loaded, loads about:blank main.html and replaces parent with ixl.com
   function init() {
   str = window.location.href;
-  mainpage = (str.substring(0, str.lastIndexOf("/"))) + '/main.html';
-  aboutBlank(mainpage, "embed");
-  replace('https://ixl.com');
+    if(window.self == window.top) {
+      mainpage = (str.substring(0, str.lastIndexOf("/"))) + '/main.html';
+      aboutBlank(mainpage, "embed");
+      replace('https://ixl.com');
+    }
   }
   
   // Function to toggle fullscreen mode
