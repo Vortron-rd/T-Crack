@@ -10,7 +10,7 @@
 <body>
   <div id=title>
   <img src="logo.png" width=50% style="display: block; margin-left: 20%; margin-right: auto;">
-  <p><em>"The return of the king."</em></p>
+  <p><em>"Games, Now."</em></p>
   </div>
   <div id="hub-menu">
     <ul>
@@ -22,6 +22,7 @@
       <li onclick="loadGame('https://subwaysurf.io/subway-surfers.play')">Subway Surfers</li>
       <li onclick="loadGame('https://www.google.com/webhp?igu=1')">Google Search</li>
       <li onclick="loadGame('https://browser.rammerhead.org')">RammerHead Proxy</li>
+      <li onclick="loadGame('https://incog.works/')">Incognito Proxy</li>
       <li onclick="loadGame('https://soundbuttonsworld.com/')">SoundBoard</li>
       <li onclick="loadGame('https://deadsimplechat.com/zLQ7R4Sjf')">Chatroom</li>
     </ul>
@@ -42,6 +43,206 @@
     <!-- Placeholder for the game content -->
   </div>
 
-  <script src="script.js"></script>
+  <!-- Styles the site in an embedded format-->
+  <style>
+  * {
+     font-family: "Times New Roman", serif;
+   }
+   body {
+     margin: 0;
+     padding: 0;
+     background-color: #02020d;
+   }
+   button {
+     background-color: #2036FB;
+     color: #fff;
+   }
+   #title h1 {
+     text-align: center;
+     color: #913c03;
+     font-size: 500%;
+   }
+   #title p {
+     color: #FFE81F;
+     text-align: center;
+   }
+   p {
+     color: #fff;
+   }
+   li {
+     text-align: justify;
+     color: #fff;
+   }
+   
+   #hub-menu {
+     text-align: center;
+   }
+   
+   #hub-menu ul {
+     list-style: none;
+     padding: 0;
+     border: 2px solid #CB6D2E;
+     background-color: #70350D;
+   }
+   
+   #hub-menu ul li {
+     display: inline-block;
+     cursor: pointer;
+     margin: 0 10px;
+     
+   }
+   
+   #hub-menu ul li:hover {
+     text-decoration: underline;
+   }
+   
+   #game-menu {
+     text-align: center;
+   }
+   
+   #game-menu ul {
+     list-style: none;
+     padding: 0;
+   }
+   
+   #game-menu ul li {
+     display: inline-block;
+     cursor: pointer;
+     margin: 0 10px;
+   }
+   
+   #game-menu ul li:hover {
+     text-decoration: underline;
+   }
+   
+   #fullscreen-btn {
+     display: block;
+     margin: 20px auto;
+   }
+   .center {
+     position: absolute;
+     left: 47.2%; /* x */
+     top:  45%; /* y */
+   }
+   
+   .large {
+     width 200%
+     height 200%
+     font-size 200%;
+   }
+   
+   #game-container {
+     all: initial;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+   }
+   
+   html body div#game-container embed {
+   all:initial;
+   background-color:#fff;
+   height:100vh;
+   width:100%
+   
+   
+   }
+  </style>
+ 
+  <!-- Embedded version of script.js from unportable version -->
+  <script>
+  // Var Definitions
+  
+  pnckey = "q" //Key used for quickly replacing the tab with a school-safe oneq
+  
+  //Opens a about:blank tab with either a <iframe> or a <embed>
+  function aboutBlank(url, type) {
+    var urlObj = new window.URL(window.location.href);
+    if(url) {
+      var win;
+      if(win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement(type);
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+        win.document.title = "IXL | Math, Language Arts, Science, Social Studies, and Spanish"
+        var link = win.document.querySelector("link[rel~='icon']");
+        if(!link) {
+          link = win.document.createElement('link');
+          link.rel = 'icon';
+          win.document.head.appendChild(link);
+        }
+        link.href = 'https://www.ixl.com/ixl-favicon.png';
+      }
+    };
+  }
+  
+  
+  
+  document.head = document.head || document.getElementsByTagName('head')[0];
+  
+  function changeFavicon(src) {
+   var link = document.createElement('link'),
+       oldLink = document.getElementById('dynamic-favicon');
+   link.id = 'dynamic-favicon';
+   link.rel = 'shortcut icon';
+   link.href = src;
+   if (oldLink) {
+    document.head.removeChild(oldLink);
+   }
+   document.head.appendChild(link);
+  }
+  //Replaces the current tab with the specified url and (usually) overwrites history 
+  function replace(url) {
+  	window.location.replace(url);
+  }
+  
+  
+  // Function to load a game into the game container
+  function loadGame(gameurl) {
+    const gameContainer = document.getElementById('game-container');
+    gameContainer.innerHTML = `<embed src="${gameurl}" width="100%" height="100%" frameborder="0"></embed>`;
+    document.getElementById('url-input').value = gameurl;
+  }
+  //Function ran when index.html is loaded, loads about:blank main.html and replaces parent with ixl.com
+  function init() {
+  str = window.location.href;
+  mainpage = (str.substring(0, str.lastIndexOf("/"))) + '/main.html';
+  aboutBlank(mainpage, "embed");
+  replace('https://ixl.com');
+  }
+  
+  // Function to toggle fullscreen mode
+  function toggleFullscreen() {
+    const gameContainer = document.getElementById('game-container');
+  
+  
+      if (gameContainer.requestFullscreen) {
+        gameContainer.requestFullscreen();
+      } else if (gameContainer.mozRequestFullScreen) {
+        gameContainer.mozRequestFullScreen();
+      } else if (gameContainer.webkitRequestFullscreen) {
+        gameContainer.webkitRequestFullscreen();
+      } else if (gameContainer.msRequestFullscreen) {
+        gameContainer.msRequestFullscreen();
+      } 
+  }
+  document.onkeydown=(e)=>{
+  	console.log('Keydown');
+  	switch(e.key) {
+  		case pnckey:e.preventDefault();
+  		e.stopPropagation();
+  		replace('https://ixl.com');
+  	}
+  }
+  </script>
 </body>
 </html>
