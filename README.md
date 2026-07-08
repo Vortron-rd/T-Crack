@@ -5,7 +5,6 @@ If you have an issue, don't hesitate to submit a pull request, as I will not be 
 For the most part, T-Crack is centered around bypassing Goguardian, a tool that schools use to monitor and block websites students use.
 
 - Website(s) [The recommended way to access T-Crack.] \
-   https://tcrack.vortron.net \
    https://vortron-rd.github.io/T-Crack
 
 - Portable File version [Not recommended if planning on hosting your own site] \
