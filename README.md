@@ -1,3 +1,5 @@
+## NOTICE: THIS SOFTWARE HAS NOT BEEN ACTIVELY MAINTAINED SINCE JAN 2025. IT IS LEFT AS AN EDUCATIONAL SOURCE FOR ANY WHO MAY WISH TO USE IT.
+
 A website for bypassing system monitoring and restricting tools such as Goguardian.
 
 If you have an issue, don't hesitate to submit a pull request, as I will not be focusing on this project too often and do not usually have time to write up new code.
